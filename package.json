@@ -1,0 +1,32 @@
+{
+  "name": "asc-tool",
+  "version": "1.0.0",
+  "description": "Reusable CLI for automating App Store Connect setup via the REST API",
+  "bin": {
+    "asc-tool":     "./dist/cli.js",
+    "asc-tool-mcp": "./dist/mcp/server.js"
+  },
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.7.2",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "ora": "^5.4.1",
+    "prompts": "^2.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.0",
+    "@types/prompts": "^2.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
